@@ -1,0 +1,22 @@
+{
+  "details": {
+    "bidirectional": {
+      "selected_radius_scale": 0.3,
+      "status": "selected_one_grid_step_above_smallest_safe_scale"
+    },
+    "one_sided": {
+      "selected_radius_scale": 0.2,
+      "status": "selected_one_grid_step_above_smallest_safe_scale"
+    },
+    "windowed_w200": {
+      "selected_radius_scale": 0.3,
+      "status": "selected_one_grid_step_above_smallest_safe_scale"
+    }
+  },
+  "run_id": "10bc24cda7cf",
+  "scales": {
+    "bidirectional": 0.3,
+    "one_sided": 0.2,
+    "windowed_w200": 0.3
+  }
+}

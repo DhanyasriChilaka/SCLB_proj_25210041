@@ -1,0 +1,78 @@
+{
+  "calibration_protocol": {
+    "calibration_seed_start": 1000,
+    "calibration_seeds": 50,
+    "environment": {
+      "K": 6,
+      "context_mode": "controlled",
+      "d": 5,
+      "quality_jitter": 0.08,
+      "sigma": 0.1
+    },
+    "horizon": 5000,
+    "mechanisms": [
+      "one_sided",
+      "bidirectional",
+      "windowed_w200"
+    ],
+    "quick": false,
+    "radius_grid": [
+      0.1,
+      0.125,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "radius_scaling": "multiplies_entire_beta_root",
+    "stage": "truthful_radius_calibration"
+  },
+  "calibration_run_id": "6c80b2fb2d99",
+  "primary_protocol": {
+    "calibration_run_id": "6c80b2fb2d99",
+    "conditions": [
+      "truthful",
+      "under_reporter",
+      "over_reporter",
+      "time_delayed",
+      "time_banker",
+      "pull_delayed",
+      "pull_banker"
+    ],
+    "evaluation_seed_start": 0,
+    "evaluation_seeds": 50,
+    "horizon": 5000,
+    "mechanisms": [
+      "linucb",
+      "one_sided",
+      "bidirectional",
+      "windowed_w200"
+    ],
+    "quick": false,
+    "scenarios": [
+      "controlled_strong",
+      "controlled_weak",
+      "iid_robustness"
+    ],
+    "selected_radius_scales": {
+      "bidirectional": 0.25,
+      "one_sided": 0.125,
+      "windowed_w200": 0.25
+    },
+    "stage": "primary_evaluation",
+    "strategy_parameters": {
+      "banker_a_minus": 0.1,
+      "banker_a_plus": 0.15,
+      "over_delta": 0.15,
+      "pull_banking_target": 100,
+      "time_switch_round": 1000,
+      "under_delta": 0.1
+    },
+    "window_sizes": {
+      "windowed_w200": 200
+    }
+  },
+  "primary_run_id": "793a59b2227b"
+}
